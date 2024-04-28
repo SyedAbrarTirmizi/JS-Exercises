@@ -18,9 +18,29 @@ let arr = [
   [8, 9, 3, 0],
 ];
 
-for (let i = 0; i < 4; i++){
-    console.log("start")
-    for (let j = 0; j < 4; j++){
-        console.log(arr[i][j])
-    }
+for (let i = 0; i < 4; i++) {
+  // console.log("start")
+  for (let j = 0; j < 4; j++) {
+    // console.log(arr[i][j])
+  }
 }
+
+// Title Case
+let myString = "mY NamE iS SyEd aBrAr";
+// "My Name is Syed Abrar"
+
+// console.log(myString.toLowerCase());
+// console.log(myString.toUpperCase());
+
+myString = myString.toLowerCase();
+
+let words = myString.split(" ");
+
+let result = "";
+for (let i = 0; i < words.length; i++) {
+  const word = words[i];
+  console.log(words[i][0].toUpperCase() + word.slice(1));
+  result += words[i][0].toUpperCase() + word.slice(1);
+}
+
+console.log(result);
